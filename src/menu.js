@@ -155,3 +155,10 @@ let menu = [{
         'course': 'appetizer'
     }
 ]
+
+const tester = (name) => `TESTING ${name}`
+
+export {
+    menu,
+    tester
+}
