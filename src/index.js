@@ -1,14 +1,15 @@
 import {
-    menu,
-    tester
-} from "./menu";
+    createTextEl,
+    createDiv,
+    createMenuItem,
+    createMenu
+}
+from "./dom-creation"
+import * as menuArray from "./menu";
 
 const content = document.querySelector('#content')
 
-function component() {
-    const element = document.createElement('div')
-    element.innerHTML = tester('mikey')
-    return element;
-}
+const menuArea = createDiv(content, 'menu-area')
 
-content.appendChild(component())
+
+content.appendChild(createMenu(menuArea, menuArray.main))
