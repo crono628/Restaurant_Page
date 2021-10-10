@@ -8,7 +8,7 @@ from "./dom-creation"
 
 import * as foodArray from "./menu";
 
-const createMenu = (parent, foodArray) => {
+function createMenu(parent, foodArray) {
     foodArray.forEach((obj) => createMenuItem(parent, obj));
 };
 
