@@ -15,4 +15,4 @@ const content = document.querySelector('#content')
 
 const menuArea = createDiv(content, 'menu-area')
 
-document.body.appendChild(createMenu(menuArea, foodArray.main))
+content.appendChild(createMenu(menuArea, foodArray.main))
