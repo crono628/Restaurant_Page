@@ -1,4 +1,4 @@
-const main = [{
+export const main = [{
         name: 'Valentina\'s Egg Beaters',
         description: 'Served with Tabasco en flambé',
         price: '$6.99'
@@ -91,7 +91,7 @@ const main = [{
 ]
 
 
-const appetizer = [{
+export const appetizer = [{
         name: 'Stripclub Wedge of Jarslberg',
         description: 'Aged at The Bing',
         price: '$15.99'
@@ -128,7 +128,7 @@ const appetizer = [{
     }
 ]
 
-const dessert = [{
+export const dessert = [{
         name: 'Hugh\'s Favorite Maple Walnut Icebox Cake',
         description: 'Only available during peak hours',
         price: '$8.99'
@@ -155,7 +155,7 @@ const dessert = [{
     }
 ]
 
-const drinks = [{
+export const drinks = [{
         name: 'Orange Juice',
         description: 'Has some pulp',
         price: '$1.99'
@@ -197,9 +197,9 @@ const drinks = [{
     }
 ]
 
-export {
-    main,
-    appetizer,
-    dessert,
-    drinks
-}
+// export {
+//     main,
+//     appetizer,
+//     dessert,
+//     drinks
+// }

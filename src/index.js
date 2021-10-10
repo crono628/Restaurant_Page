@@ -1,15 +1,18 @@
 import {
-    createTextEl,
     createDiv,
-    createMenuItem,
-    createMenu
+    createTextEl,
+    createMenuItem
 }
 from "./dom-creation"
-import * as menuArray from "./menu";
+
+import * as foodArray from "./menu";
+
+const createMenu = (parent, foodArray) => {
+    foodArray.forEach((obj) => createMenuItem(parent, obj));
+};
 
 const content = document.querySelector('#content')
 
 const menuArea = createDiv(content, 'menu-area')
 
-
-content.appendChild(createMenu(menuArea, menuArray.main))
+document.body.appendChild(createMenu(menuArea, foodArray.main))
