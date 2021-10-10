@@ -3,6 +3,7 @@ import {
     createTextEl,
     createMenuItem
 }
+
 from "./dom-creation"
 
 import * as foodArray from "./menu";
@@ -14,5 +15,7 @@ const createMenu = (parent, foodArray) => {
 const content = document.querySelector('#content')
 
 const menuArea = createDiv(content, 'menu-area')
+
+console.log(menuArea)
 
 content.appendChild(createMenu(menuArea, foodArray.main))
