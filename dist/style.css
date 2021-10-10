@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'Mobsters';
+    src: URL('Mobsters.ttf') format('truetype');
+}
+
+*,
+::before,
+::after {
+    font-family: Mobsters;
+}
+
+.menu-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 .food-item {
+    display: flex;
+    flex-direction: column;
     border: solid black;
+    height: 400px;
+    width: 220px;
+    padding: 7px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.description {
+    font-size: 20px;
+    flex: 1;
+}
+
+.price {
+    font-size: 30px;
 }

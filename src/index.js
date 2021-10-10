@@ -12,10 +12,13 @@ function createMenu(parent, foodArray) {
     foodArray.forEach((obj) => createMenuItem(parent, obj));
 };
 
-const content = document.querySelector('#content')
+const mainDiv = document.createElement('div')
+mainDiv.setAttribute('class', 'content')
+document.body.appendChild(mainDiv)
 
-const menuArea = createDiv(content, 'menu-area')
 
-console.log(menuArea)
+const menuArea = createDiv(mainDiv, 'menu-area')
 
-content.appendChild(createMenu(menuArea, foodArray.main))
+
+
+mainDiv.appendChild(createMenu(menuArea, foodArray.main))
