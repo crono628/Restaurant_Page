@@ -6,11 +6,8 @@
 *,
 ::before,
 ::after {
+    box-sizing: border-box;
     font-family: Niagara;
-}
-
-.content {
-    background-image: ;
 }
 
 body {
@@ -22,7 +19,6 @@ body {
     /* background-color: rgb(139, 0, 0); */
 
 }
-
 
 .menu-area {
     display: flex;
