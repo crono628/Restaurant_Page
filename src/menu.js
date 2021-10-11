@@ -70,7 +70,7 @@ export const main = [{
     },
     {
         name: 'Janice\'s Carmela\'s Lasagna',
-        description: 'Little bits of sweet sausage, layer of basil leaves right under the cheese',
+        description: 'Bits of sweet sausage, layer of basil leaves under the cheese',
         price: '$19.99'
     },
     {

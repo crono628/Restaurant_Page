@@ -9,6 +9,21 @@
     font-family: Niagara;
 }
 
+.content {
+    background-image: ;
+}
+
+body {
+    background-image: url('../img/newjersey.png'), linear-gradient(to right, red, white, green);
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    background-size: 50vh, 120vw;
+    background-position: center;
+    /* background-color: rgb(139, 0, 0); */
+
+}
+
+
 .menu-area {
     display: flex;
     flex-wrap: wrap;
@@ -19,23 +34,25 @@
 
 .food-item {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: solid black;
+    flex-wrap: wrap;
+    border: solid black 1px;
     height: 150px;
     width: 250px;
     padding-left: 7px;
+    background-color: rgba(194, 194, 194, 0.575);
 }
 
 .title {
     font-size: 28px;
     height: 30px;
+    flex: 1 0 100%
 }
 
 .description {
     font-size: 12px;
     font-family: monospace;
     height: 20px;
+    flex: 0 1 70%;
 }
 
 .price {
@@ -44,4 +61,5 @@
     height: 20px;
     margin-left: auto;
     padding-right: 5px;
+    flex: 0 1 25%;
 }
