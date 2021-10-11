@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Mobsters';
-    src: URL('Mobsters.ttf') format('truetype');
+    font-family: 'Niagara';
+    src: URL('Niagara Solid Regular.ttf') format('truetype');
 }
 
 *,
 ::before,
 ::after {
-    font-family: Mobsters;
+    font-family: Niagara;
 }
 
 .menu-area {
@@ -20,19 +20,28 @@
 .food-item {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     border: solid black;
-    height: 400px;
-    width: 220px;
-    padding: 7px;
-    font-size: 40px;
-    margin: 0;
+    height: 150px;
+    width: 250px;
+    padding-left: 7px;
+}
+
+.title {
+    font-size: 28px;
+    height: 30px;
 }
 
 .description {
-    font-size: 20px;
-    flex: 1;
+    font-size: 12px;
+    font-family: monospace;
+    height: 20px;
 }
 
 .price {
-    font-size: 30px;
+    font-family: monospace;
+    font-size: 15px;
+    height: 20px;
+    margin-left: auto;
+    padding-right: 5px;
 }
