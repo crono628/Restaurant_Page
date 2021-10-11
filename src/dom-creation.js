@@ -1,27 +1,41 @@
 function createDiv(parent, classes) {
-    const newDiv = document.createElement("div");
-    newDiv.setAttribute("class", classes);
+    const newDiv = document.createElement('div');
+    newDiv.setAttribute('class', classes);
     parent.appendChild(newDiv);
     return newDiv;
 };
 
 function createTextEl(parent, type, classes, text) {
     const newEl = document.createElement(type);
-    newEl.setAttribute("class", classes);
+    newEl.setAttribute('class', classes);
     newEl.innerText = text;
     parent.appendChild(newEl);
     return newEl;
 };
 
 function createMenuItem(parent, food) {
-    const item = createDiv(parent, "food-item");
-    createTextEl(item, "h3", "title", food.name);
-    createTextEl(item, "p", "description", food.description);
-    createTextEl(item, "h4", "price", food.price);
+    const item = createDiv(parent, 'food-item');
+    createTextEl(item, 'h3', 'title', food.name);
+    createTextEl(item, 'p', 'description', food.description);
+    createTextEl(item, 'h4', 'price', food.price);
+};
+
+function createImgDiv(parent, classes, src) {
+    const newDiv = document.createElement('div');
+    newDiv.setAttribute('class', classes);
+    newDiv.setAttribute('src', src);
+    parent.appendChild(newDiv);
+    return newDiv;
+}
+
+function createMenu(parent, array) {
+    array.forEach((obj) => createMenuItem(parent, obj));
 };
 
 export {
     createDiv,
     createTextEl,
-    createMenuItem
+    createMenuItem,
+    createMenu,
+    createImgDiv
 }

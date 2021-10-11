@@ -44,7 +44,7 @@ export const main = [{
         price: '$25.99'
     },
     {
-        name: 'Junior\'s Peppahs and Eggs Sandwich',
+        name: 'Peppahs and Eggs Sandwich',
         description: 'If you don\'t order this, you\'ll wish you did!',
         price: '$9.99'
     },
