@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/crono628/Restaurant_Page/issues"
   },
-  "homepage": "https://github.com/crono628/Restaurant_Page#readme",
+  "homepage": "https://github.com/crono628/Restaurant_Page/",
   "devDependencies": {
     "webpack": "^5.57.1",
     "webpack-cli": "^4.9.0"
