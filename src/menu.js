@@ -99,7 +99,7 @@ export const appetizer = [{
     {
         name: 'Sil\'s Bread',
         description: 'Fresh from the Bread Museum',
-        price: '$4.99/basket'
+        price: '$4.99'
     },
     {
         name: 'Burrata and Green Beans',

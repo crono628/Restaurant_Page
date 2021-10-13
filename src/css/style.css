@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Niagara";
+    src: URL("../fonts/Niagara\ Solid\ Regular.ttf") format("truetype");
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex: 1;
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0), yellow, rgba(255, 255, 0, 0));
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    width: 100vw;
+}
+
+.header-area>a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+.header-area>a:hover {
+    text-decoration: none;
+    background-color: red;
+    cursor: pointer;
+
+}
+
+.header-area>a:active {
+    text-decoration: none;
+    background-color: red;
+    color: blue;
+}
+
+body {
+    background-image: url("../img/newjersey.png"),
+        linear-gradient(to right, red, white, green);
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    background-size: 44vh, 120vw;
+    background-position: center;
+}
+
+.menu-area {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    border: solid black 1px;
+    height: 100px;
+    width: 200px;
+    padding: 4px;
+    text-align: left;
+    background-color: rgba(194, 194, 194, 0.575);
+}
+
+#title {
+    font-size: 15px;
+    height: 30px;
+    flex: 1 0 100%;
+    padding: 0;
+    margin: auto;
+}
+
+#description {
+    font-size: 10px;
+    font-family: monospace;
+    height: 20px;
+    flex: 2 2 70%;
+}
+
+#price {
+    font-family: monospace;
+    font-size: 12px;
+    height: 4px;
+    margin-left: auto;
+    flex: 2;
+}
+
+div>#drinks-text,
+div>#appetizer-text,
+#main-text,
+#dessert-text {
+    font-size: 35px;
+    margin-top: 10vh;
+    scroll-margin-top: 10vh;
+    text-align: center;
+}
+
+.content {
+    margin-bottom: 70vh;
+}
