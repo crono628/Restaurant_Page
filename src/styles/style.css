@@ -5,7 +5,10 @@
     font-family: monospace;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
 html {
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -15,7 +18,7 @@ html {
     align-items: center;
     gap: 25px;
     flex: 1;
-    background-image: linear-gradient(to right, rgba(255, 255, 0, 0), yellow, rgba(255, 255, 0, 0));
+    background-image: linear-gradient(to bottom, rgb(184, 111, 1), rgba(255, 255, 0, 0));
     margin: 0;
     padding: 10px;
     position: fixed;
@@ -27,28 +30,28 @@ html {
 
 .header-area>a:link {
     text-decoration: none;
-    color: blue;
+    color: rgb(0, 0, 0);
 }
 
 .header-area>a:hover {
     text-decoration: none;
-    background-color: red;
+    background-color: rgb(163, 0, 0);
     cursor: pointer;
 
 }
 
 .header-area>a:active {
     text-decoration: none;
-    background-color: red;
-    color: blue;
+    background-color: rgb(163, 0, 0);
+    color: rgb(251, 255, 0);
 }
 
 body {
     background-image: url("../img/newjersey.png"),
-        linear-gradient(to right, red, white, green);
+        linear-gradient(to right, red, white, white, green);
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
-    background-size: 44vh, 120vw;
+    background-size: 44vh, 120%;
     background-position: center;
 }
 
@@ -56,7 +59,7 @@ body {
     margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 }
@@ -66,15 +69,15 @@ body {
     flex-wrap: wrap;
     align-items: flex-end;
     border: solid black 1px;
-    height: 100px;
-    width: 200px;
+    height: 85px;
+    width: 150px;
     padding: 4px;
     text-align: left;
     background-color: rgba(194, 194, 194, 0.575);
 }
 
 #title {
-    font-size: 15px;
+    font-size: 12px;
     height: 30px;
     flex: 1 0 100%;
     padding: 0;
@@ -82,7 +85,7 @@ body {
 }
 
 #description {
-    font-size: 10px;
+    font-size: 8px;
     font-family: monospace;
     height: 20px;
     flex: 2 2 70%;
@@ -90,20 +93,32 @@ body {
 
 #price {
     font-family: monospace;
-    font-size: 12px;
+    font-size: 9px;
     height: 4px;
     margin-left: auto;
     flex: 2;
 }
 
-div>#drinks-text,
-div>#appetizer-text,
+
+#drinks-text,
+#appetizer-text,
 #main-text,
 #dessert-text {
     font-size: 35px;
-    margin-top: 10vh;
-    scroll-margin-top: 10vh;
+    margin-top: 8vh;
+    scroll-margin-top: 8vh;
     text-align: center;
+}
+
+#welcome-text {
+    display: flex;
+    font-family: 'Tangerine', cursive;
+    font-size: 80px;
+    margin-top: 8vh;
+    scroll-margin-top: 8vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .content {

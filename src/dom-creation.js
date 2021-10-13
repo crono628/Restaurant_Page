@@ -17,11 +17,11 @@ function createMenuItem(parent, food) {
     const item = createDiv(parent, 'food-item');
     createTextEl(item, 'h3', 'title', food.name);
     createTextEl(item, 'p', 'description', food.description);
-    createTextEl(item, 'h4', 'price', food.price);
+    createTextEl(item, 'h5', 'price', food.price);
 };
 
 function createImgDiv(parent, classes, src) {
-    const newDiv = document.createElement('div');
+    const newDiv = document.createElement('img');
     newDiv.setAttribute('class', classes);
     newDiv.setAttribute('src', src);
     parent.appendChild(newDiv);

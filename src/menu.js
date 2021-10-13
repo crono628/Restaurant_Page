@@ -5,7 +5,7 @@ export const main = [{
     },
     {
         name: 'Adrianna\'s Cheez Dogz',
-        description: '2 Weiners and 2 Buns served beneath 1 full can of Cheez Whiz',
+        description: 'Served beneath 1 full can of Cheez Whiz',
         price: '$11.99'
     },
     {
@@ -70,7 +70,7 @@ export const main = [{
     },
     {
         name: 'Janice\'s Carmela\'s Lasagna',
-        description: 'Bits of sweet sausage, layer of basil leaves under the cheese',
+        description: 'Bits of sweet sausage, basil under the cheese',
         price: '$19.99'
     },
     {

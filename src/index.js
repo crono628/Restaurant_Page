@@ -1,10 +1,12 @@
 import css from './styles/style.css'
 import newjersey from './img/newjersey.png'
+import artie from './img/artie.png'
 import {
     createDiv,
     createMenu,
     createTextEl,
-    createHeader
+    createHeader,
+    createImgDiv
 }
 from "./dom-creation"
 
@@ -14,7 +16,15 @@ const mainDiv = document.createElement('div')
 mainDiv.setAttribute('class', 'content')
 document.body.appendChild(mainDiv)
 
+// const myIcon = new Image();
+// myIcon.src = artie
+// mainDiv.appendChild(myIcon)
+
 createHeader(mainDiv, "area", [{
+        href: "welcome-text",
+        text: "Welcome"
+    },
+    {
         href: "drinks-text",
         text: "Drinks"
     },
@@ -38,11 +48,12 @@ function menuSection(parent, array, id) {
     const menuArea = createDiv(newDiv, "menu-area");
     createMenu(menuArea, array);
 }
-
+const textSectionWelcome = createTextEl(mainDiv, 'div', 'welcome-text', "Nuovo Vesuvio")
 const textSectionDrink = createTextEl(mainDiv, 'div', 'drinks-text', "Drinks")
 const textSectionAppetizer = createTextEl(mainDiv, 'div', 'appetizer-text', "Appetizer")
 const textSectionMain = createTextEl(mainDiv, 'div', 'main-text', "Main Course")
 const textSectionDessert = createTextEl(mainDiv, 'div', 'dessert-text', "Dessert")
+createImgDiv(textSectionWelcome, 'artie', artie)
 menuSection(textSectionDrink, foodArray.drinks, "drinks");
 menuSection(textSectionAppetizer, foodArray.appetizer, "appetizer");
 menuSection(textSectionMain, foodArray.main, "main");
