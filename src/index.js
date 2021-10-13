@@ -1,3 +1,4 @@
+import css from './styles/style.css'
 import {
     createDiv,
     createMenu,
