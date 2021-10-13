@@ -1,4 +1,5 @@
 import css from './styles/style.css'
+import newjersey from './img/newjersey.png'
 import {
     createDiv,
     createMenu,
