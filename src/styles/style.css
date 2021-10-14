@@ -14,17 +14,17 @@ html {
 
 .header-area {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    flex: 1;
-    background-image: linear-gradient(to bottom, rgb(184, 111, 1), rgba(255, 255, 0, 0));
+    gap: 20px;
+    background-image: linear-gradient(to bottom, rgb(184, 111, 1), rgba(184, 111, 1, 0.6), rgba(184, 111, 1, 0));
     margin: 0;
     padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
-    font-size: 15px;
+    font-size: 3vmin;
     width: 100vw;
 }
 
@@ -51,7 +51,7 @@ body {
         linear-gradient(to right, red, white, white, green);
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
-    background-size: 44vh, 120%;
+    background-size: 45vmin, 100vw;
     background-position: center;
 }
 
@@ -67,36 +67,36 @@ body {
 .food-item {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    flex: 3 1 25%;
+    max-width: 25vmax;
     align-items: flex-end;
     border: solid black 1px;
-    height: 85px;
+    height: 90px;
     width: 150px;
     padding: 4px;
-    text-align: left;
     background-color: rgba(194, 194, 194, 0.575);
 }
 
 #title {
-    font-size: 12px;
-    height: 30px;
-    flex: 1 0 100%;
+    font-size: 1.7vmin;
+    flex: 3 0 100%;
     padding: 0;
     margin: auto;
+    text-align: left;
 }
 
 #description {
-    font-size: 8px;
-    font-family: monospace;
-    height: 20px;
-    flex: 2 2 70%;
+    font-size: 1.5vmin;
+    width: 72%;
+    text-align: left;
 }
 
 #price {
-    font-family: monospace;
-    font-size: 9px;
-    height: 4px;
-    margin-left: auto;
-    flex: 2;
+    font-size: 1.5vmin;
+    position: absolute;
+    bottom: 0;
+    right: 4px;
 }
 
 
@@ -104,7 +104,7 @@ body {
 #appetizer-text,
 #main-text,
 #dessert-text {
-    font-size: 35px;
+    font-size: 6vmin;
     margin-top: 8vh;
     scroll-margin-top: 8vh;
     text-align: center;
@@ -113,7 +113,7 @@ body {
 #welcome-text {
     display: flex;
     font-family: 'Tangerine', cursive;
-    font-size: 80px;
+    font-size: 15vw;
     margin-top: 8vh;
     scroll-margin-top: 8vh;
     justify-content: center;
