@@ -16,24 +16,21 @@ function createMenuItem(parent, food) {
   const foodItem = document.createElement("div");
   foodItem.setAttribute("class", "food-item");
   dom(
-    "div",
-    {
+    "div", {
       classList: "food-name"
     },
     food.name,
     foodItem
   );
   dom(
-    "div",
-    {
+    "div", {
       classList: "food-description"
     },
     food.description,
     foodItem
   );
   dom(
-    "div",
-    {
+    "div", {
       classList: "food-price"
     },
     food.price,
@@ -48,14 +45,8 @@ function createMenu(parent, array) {
   });
 }
 
-function createMenu(parent, array) {
-    array.forEach(obj => {
-        createMenuItem(parent, obj)
-    });
-};
-
 export {
-    dom,
-    createMenuItem,
-    createMenu
+  dom,
+  createMenuItem,
+  createMenu
 }
