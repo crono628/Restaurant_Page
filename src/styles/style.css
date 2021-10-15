@@ -8,38 +8,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
 html {
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
-.header-area {
+body {
+    background-image: url("../img/newjersey.png"),
+        linear-gradient(to right, red, white, white, green);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-size: 45vmin, 100%;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90vh;
+}
+
+.header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-image: linear-gradient(to bottom, rgb(184, 111, 1), rgba(184, 111, 1, 0.6), rgba(184, 111, 1, 0));
+    background-image: linear-gradient(to bottom, rgb(184, 111, 1), rgba(184, 111, 1, 0.6), rgba(184, 111, 1, 0.2));
     margin: 0;
     padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
-    font-size: 3vmin;
-    width: 100vw;
+    font-size: 2.5vw;
+    width: 100%;
 }
 
-.header-area>a:link {
+.header>a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
-.header-area>a:hover {
+.header>a:hover {
     text-decoration: none;
     background-color: rgb(163, 0, 0);
     cursor: pointer;
-
 }
 
+.menu-div {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+
+.drinks-div {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.appetizers-div {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+
+.desserts-div {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+
+.food-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.food-description {
+    font-size: 12px;
+}
+
+.food-price {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#drinks-text,
+#appetizers-text,
+#main-text,
+#desserts-text {
+    width: 100%;
+    font-size: 40px;
+    margin-top: 10vh;
+    scroll-margin-top: 8vh;
+    text-align: center;
+}
+
+.food-item {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: auto;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    padding: 4px;
+    background-color: rgba(194, 194, 194, 0.575);
+}
+
+/* 
 img {
     height: 70vw;
 }
@@ -50,14 +138,6 @@ img {
     color: rgb(251, 255, 0);
 }
 
-body {
-    background-image: url("../img/newjersey.png"),
-        linear-gradient(to right, red, white, white, green);
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: fixed;
-    background-size: 45vmin, 100vw;
-    background-position: center;
-}
 
 .menu-area {
     margin-top: 5vh;
@@ -66,21 +146,11 @@ body {
     gap: 10px;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.food-item {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 20vmin;
-    height: 18vmin;
-    align-items: flex-end;
-    border: solid black 1px;
-    padding: 4px;
-    background-color: rgba(194, 194, 194, 0.575);
-}
 
-#title {
+/* 
+#name {
     font-size: 1.8vmin;
     flex: 3 0 100%;
     padding: 0;
@@ -121,8 +191,4 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.content {
-    margin-bottom: 70vh;
-}
+} */
