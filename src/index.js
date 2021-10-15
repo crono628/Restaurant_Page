@@ -9,103 +9,119 @@ import {
 }
 from "./dom-creation"
 
-const mainDiv = document.createElement('div')
-mainDiv.setAttribute('class', 'content')
-mainDiv.setAttribute('id', 'welcome-text')
-document.body.appendChild(mainDiv)
 
-const headerDiv = dom('div', {
-    classList: 'header'
-}, null, mainDiv)
+const mainDiv = document.createElement("div");
+mainDiv.setAttribute("class", "content");
+mainDiv.setAttribute("id", "welcome-text");
+document.body.appendChild(mainDiv);
 
-dom('a', {
+dom("h6", { id: "restaurant-name" }, "Nuovo Vesuvio", mainDiv);
+
+const headerDiv = dom(
+  "div",
+  {
+    classList: "header"
+  },
+  null,
+  mainDiv
+);
+
+dom(
+  "a",
+  {
     href: "#welcome-text"
-}, 'Welcome', headerDiv)
+  },
+  "Welcome",
+  headerDiv
+);
 
-dom('a', {
+dom(
+  "a",
+  {
     href: "#drinks-text"
-}, 'Drinks', headerDiv)
+  },
+  "Drinks",
+  headerDiv
+);
 
-dom('a', {
+dom(
+  "a",
+  {
     href: "#appetizers-text"
-}, 'Appetizers', headerDiv)
+  },
+  "Appetizers",
+  headerDiv
+);
 
-dom('a', {
+dom(
+  "a",
+  {
     href: "#main-text"
-}, 'Main Course', headerDiv)
+  },
+  "Main Course",
+  headerDiv
+);
 
-dom('a', {
+dom(
+  "a",
+  {
     href: "#desserts-text"
-}, 'Dessert', headerDiv)
+  },
+  "Dessert",
+  headerDiv
+);
 
-const menuDiv = dom('div', {
-    classList: 'menu-div'
-}, null, mainDiv)
+const menuDiv = dom(
+  "div",
+  {
+    classList: "menu-div"
+  },
+  null,
+  mainDiv
+);
 
-const drinksDiv = dom('div', {
-    classList: 'drinks-div',
-    id: 'drinks-text'
-}, 'Drinks', menuDiv)
+const drinksDiv = dom(
+  "div",
+  {
+    classList: "drinks-div"
+  },
+  null,
+  menuDiv
+);
 
-const appetizersDiv = dom('div', {
-    classList: 'appetizers-div',
-    id: 'appetizers-text'
-}, 'Appetizers', menuDiv)
+const appetizersDiv = dom(
+  "div",
+  {
+    classList: "appetizers-div"
+  },
+  null,
+  menuDiv
+);
 
-const maindishDiv = dom('div', {
-    classList: 'main-div',
-    id: 'main-text'
-}, 'Main Course', menuDiv)
+const maindishDiv = dom(
+  "div",
+  {
+    classList: "main-div"
+  },
+  null,
+  menuDiv
+);
 
-const dessertsDiv = dom('div', {
-    classList: 'desserts-div',
-    id: 'desserts-text'
-}, 'Desserts', menuDiv)
-
-
-createMenu(drinksDiv, foodArray.drinks)
-createMenu(appetizersDiv, foodArray.appetizers)
-createMenu(maindishDiv, foodArray.main)
-createMenu(dessertsDiv, foodArray.desserts)
-
-// createHeader(mainDiv, "area", [{
-//         href: "welcome-text",
-//         text: "Welcome"
-//     },
-//     {
-//         href: "drinks-text",
-//         text: "Drinks"
-//     },
-//     {
-//         href: "appetizer-text",
-//         text: "Appetizers"
-//     },
-//     {
-//         href: "main-text",
-//         text: "Main Course"
-//     },
-//     {
-//         href: "dessert-text",
-//         text: "Dessert"
-//     }
-// ]);
-
-// function menuSection(parent, array, id) {
-//     const newDiv = createDiv(parent, "menu-section");
-//     newDiv.setAttribute("id", id);
-//     const menuArea = createDiv(newDiv, "menu-area");
-//     createMenu(menuArea, array);
-// }
+const dessertsDiv = dom(
+  "div",
+  {
+    classList: "desserts-div"
+  },
+  null,
+  menuDiv
+);
 
 
-
-// const textSectionWelcome = createTextEl(mainDiv, 'div', 'welcome-text', "Nuovo Vesuvio")
-// const textSectionDrink = createTextEl(mainDiv, 'div', 'drinks-text', "Drinks")
-// const textSectionAppetizer = createTextEl(mainDiv, 'div', 'appetizer-text', "Appetizer")
-// const textSectionMain = createTextEl(mainDiv, 'div', 'main-text', "Main Course")
-// const textSectionDessert = createTextEl(mainDiv, 'div', 'dessert-text', "Dessert")
-// // createImgDiv(textSectionWelcome, 'artie', artie)
-// menuSection(textSectionDrink, foodArray.drinks, "drinks");
-// menuSection(textSectionAppetizer, foodArray.appetizer, "appetizer");
-// menuSection(textSectionMain, foodArray.main, "main");
-// menuSection(textSectionDessert, foodArray.dessert, "dessert");
+dom("h4", { id: "drinks-text" }, "Drinks", drinksDiv);
+createMenu(drinksDiv, foodArray.drinks);
+dom("h4", { id: "appetizers-text" }, "Appetizers", appetizersDiv);
+createMenu(appetizersDiv, foodArray.appetizers);
+dom("h4", { id: "main-text" }, "Main Course", maindishDiv);
+createMenu(maindishDiv, foodArray.main);
+dom("h4", { id: "desserts-text" }, "Desserts", dessertsDiv);
+createMenu(dessertsDiv, foodArray.desserts);
