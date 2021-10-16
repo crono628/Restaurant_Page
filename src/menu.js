@@ -91,7 +91,7 @@ export const main = [{
 ]
 
 
-export const appetizer = [{
+export const appetizers = [{
         name: 'Stripclub Wedge of Jarslberg',
         description: 'Aged at The Bing',
         price: '$15.99'
@@ -128,7 +128,7 @@ export const appetizer = [{
     }
 ]
 
-export const dessert = [{
+export const desserts = [{
         name: 'Hugh\'s Favorite Maple Walnut Icebox Cake',
         description: 'Only available during peak hours',
         price: '$8.99'
