@@ -1,4 +1,5 @@
 import React from 'react';
+import Body from './Body';
 import Nav from './components/Nav';
 import Welcome from './components/Welcome';
 
@@ -7,6 +8,7 @@ const App = () => {
     <div>
       <Nav />
       <Welcome />
+      <Body />
     </div>
   );
 };
