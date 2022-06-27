@@ -2,10 +2,10 @@ import React from 'react';
 
 const MenuItem = ({ item }) => {
   return (
-    <div>
-      <h6>{item.name}</h6>
-      <p>{item.description}</p>
-      <p>{item.price}</p>
+    <div className="w-[32vmin] flex flex-col flex-wrap border-black border-double border-4 m-1 p-2 rounded-lg">
+      <p className="text-lg lg:text-2xl">{item.name}</p>
+      <p className="text-xs md:text-md flex-1">{item.description}</p>
+      <p className="text-md md:text-lg">{item.price}</p>
     </div>
   );
 };
