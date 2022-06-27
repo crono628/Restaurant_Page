@@ -7,7 +7,10 @@ const Welcome = () => {
         Nuovo Vesuvio
       </p>
       <p className=" text-center text-gray-900 text-2xl">
-        You'll taste the crispness of the beans and the smoothness of the cheese
+        Enjoy the crispness of the beans{' '}
+      </p>
+      <p className=" text-center text-gray-900 text-2xl">
+        and the smoothness of the cheese
       </p>
     </div>
   );
