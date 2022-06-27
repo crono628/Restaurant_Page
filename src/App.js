@@ -9,10 +9,8 @@ const App = () => {
       <div className="sticky top-0 z-50">
         <Nav />
       </div>
-      <div className="relative">
-        <Welcome />
-        <Body />
-      </div>
+      <Welcome />
+      <Body />
     </div>
   );
 };
